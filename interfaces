@@ -1,5 +1,0 @@
-network={
-  ssid="test"
-  psk="testpwd"
-  key_mgmt=WPA-PSK
-}
