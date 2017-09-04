@@ -39,7 +39,8 @@ while getopts "ho" optname; do
 done
 
 echo "About to flash the SD card with Raspbian Jessie Lite (2016-11-25)"
-sudo dd bs=1m if=2016-11-25-raspbian-jessie-lite.img of=/dev/rdisk2
+sudo diskutil unmountDisk /dev/disk3
+sudo dd bs=1m if=2016-11-25-raspbian-jessie-lite.img of=/dev/rdisk3
 echo "Waiting for the SD card to mount"
 #give some time to mount the drive
 sleep 5
